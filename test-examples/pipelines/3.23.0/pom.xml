@@ -1,0 +1,79 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.minsait.onesait.platform.dataflow</groupId>
+  <artifactId>examples-pipelines</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <junit.version>5.9.3</junit.version>
+    <sdc.version>3.23.0</sdc.version>
+    <testcontainers.version>1.18.3</testcontainers.version>
+    <jaxb-api.version>2.4.0-b180830.0359</jaxb-api.version>
+  </properties>
+  
+  <repositories>
+    <repository>
+      <id>Onesait Platform Dataflow Repository</id>
+      <name>Onesait Platform Dataflow Repository</name>
+      <url>https://nexus.onesaitplatform.com/nexus/content/repositories/releases/</url>
+    </repository>
+  </repositories>
+  
+  <dependencies>
+	 
+	<dependency>
+	  	<groupId>org.junit.jupiter</groupId>
+	  	<artifactId>junit-jupiter-api</artifactId>
+	  	<version>${junit.version}</version>
+	  	<scope>test</scope>
+	</dependency>
+    
+	<!-- You need the container libraries to test the execution of your stages.-->
+	<dependency>
+	  	<groupId>com.streamsets</groupId>
+	  	<artifactId>streamsets-datacollector-container</artifactId>
+	  	<version>${sdc.version}</version>
+	  	<scope>test</scope>
+	</dependency>
+	<dependency>
+	  	<groupId>com.streamsets</groupId>
+	  	<artifactId>streamsets-datacollector-container-common</artifactId>
+	  	<version>${sdc.version}</version>
+	  	<scope>test</scope>
+	</dependency>
+	
+	<!-- Dependencies for ApiClient library -->
+    <dependency>
+	  	<groupId>com.streamsets</groupId>
+	  	<artifactId>streamsets-datacollector-client-api</artifactId>
+	  	<version>${sdc.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<!-- This depencency is necessary because streamsets-datacollector-client-api needs it but it is not transitive -->
+	<!-- Needed version can be seen in the pom.xml or the dependency tree of streamsets-datacollector-client-api -->
+    <dependency>
+      <groupId>javax.xml.bind</groupId>
+      <artifactId>jaxb-api</artifactId>
+      <version>${jaxb-api.version}</version>
+      <scope>test</scope>
+    </dependency>
+	
+	<!-- Dependencies to manage container in junit5 tests -->
+	<dependency>
+	    <groupId>org.testcontainers</groupId>
+	    <artifactId>testcontainers</artifactId>
+	    <version>${testcontainers.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	<dependency>
+	    <groupId>org.testcontainers</groupId>
+	    <artifactId>junit-jupiter</artifactId>
+	    <version>${testcontainers.version}</version>
+	    <scope>test</scope>
+	</dependency>
+	
+ </dependencies>
+  
+</project>
