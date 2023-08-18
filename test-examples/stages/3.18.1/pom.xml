@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.minsait.onesait.platform.dataflow</groupId>
-	<artifactId>examples-components-3.23.0</artifactId>
+	<artifactId>examples-components-3.18.1</artifactId>
 	<version>1.0.0</version>
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
-		<sdc.version>3.23.0</sdc.version>
+		<sdc.version>3.18.1</sdc.version>
 		<junit.version>5.9.3</junit.version>
 		<h2.version>2.2.220</h2.version>
 	</properties>

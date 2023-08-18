@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.minsait.onesait.platform.dataflow</groupId>
-	<artifactId>examples-pipelines-3.23.0</artifactId>
+	<artifactId>examples-pipelines-3.18.1</artifactId>
 	<version>1.0.0</version>
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<junit.version>5.9.3</junit.version>
-		<sdc.version>3.23.0</sdc.version>
+		<sdc.version>3.18.1</sdc.version>
 		<testcontainers.version>1.18.3</testcontainers.version>
 		<jaxb-api.version>2.4.0-b180830.0359</jaxb-api.version>
 	</properties>
