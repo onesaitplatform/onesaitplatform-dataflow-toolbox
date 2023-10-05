@@ -14,7 +14,7 @@
 		<repository>
 			<id>Onesait Platform Dataflow Repository</id>
 			<name>Onesait Platform Dataflow Repository</name>
-			<url>https://nexus.onesaitplatform.com/nexus/content/repositories/releases/</url>
+			<url>https://nexus.onesaitplatform.com/nexus/repository/releases/</url>
 		</repository>
 	</repositories>
 	<dependencies>
